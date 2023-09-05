@@ -1,0 +1,13 @@
+<form (submit)="handleSubmit()">
+    <div class="agregar" [ngClass]="{'agregar--subtraction': operation === 'subtraction'}">
+        <div class="agregar_contenedor">
+            <select [(ngModel)]="operation" name="operation" class="agregar_tipo">
+                <option value="addition" selected>+</option>
+                <option value="subtraction">-</option>
+            </select>
+            <input [(ngModel)]="subject" name="subject" type="text" class="agregar_descripcion" placeholder="Agregar Descripción">
+            <input [(ngModel)]="amount" name="amount" type="number" class="agregar_valor" placeholder="Valor">
+            <button class="agregar_btn" type="submit"><i class="ion-ios-checkmark-outline"></i></button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,11 @@
+<div class="elemento limpiarEstilos">
+    <div class="elemento_descripcion">{{ subject }}</div>
+    <div class="right limpiarEstilos">
+        <div class="elemento_valor">{{ amount | currency }}</div>
+        <div class="elemento_eliminar">
+            <button class="elemento_eliminar--btn" (click)="popTransaction(key)">
+                <i class="ion-ios-close-outline"></i>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="presupuesto">
+    <div class="presupuesto_titulo">
+        Presupuesto Disponible:
+    </div>
+    
+    <div class="presupuesto_valor">{{ balance | currency }}</div>
+    
+    <div class="presupuesto_ingreso limpiarEstilos">
+        <div class="presupuesto_ingreso--texto">Ingresos</div>
+        <div class="right">
+            <div class="presupuesto_ingreso--valor">{{ earnings | currency }}</div>
+            <div class="presupuesto_ingreso--porcentaje">&nbsp;</div>
+        </div>
+    </div>
+    
+    <div class="presupuesto_egreso limpiarEstilos">
+        <div class="presupuesto_egreso--texto">Egresos</div>
+        <div class="right limpiarEstilos">
+            <div class="presupuesto_egreso--valor">{{ expenses | currency }}</div>
+            <div class="presupuesto_egreso--porcentaje">{{ expensesPercentage | percent }}</div>
+        </div>
+    </div>
+</div>
